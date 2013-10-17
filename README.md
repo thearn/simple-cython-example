@@ -45,8 +45,7 @@ Then, each time you push a branch to github, tests will be executed
 automatically. The results of the tests can be e-mailed
 to you. The results of the latest test will be shown at the bottom of every
 pull request forked from your repository,
-and will be reflected in any build status images you embed (like the one at
-the top of this repo).
+and will be reflected in any build status images you embed (like this one: [![Build Status](https://travis-ci.org/thearn/simple-cython-example.png?branch=master)](https://travis-ci.org/thearn/simple-cython-example)).
 
 # Wrapped example functions
 
