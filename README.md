@@ -15,9 +15,10 @@ First, install numpy and cython (using pip or from a package manager) if you don
 
 Then just run `python setup.py develop` to build the project in-place.
 
-The module (with its wrapped C functions) will then be importable under the package
-`cython_example_proj`.
-
+The module (with its wrapped C functions) will then be importable in python:
+```bash
+>>> from cython_example_proj import *
+```
 # Testing
 
 The unit test file
