@@ -11,7 +11,7 @@ In addition to concrete examples of cython syntax, this repo also illustrates a 
 for Python projects with C extension modules, along with basic unit tests (together with a working Travis-CI config).
 
 # Building
-First, install numpy and cython.
+First, install numpy and cython (using pip or from a package manager) if you don't already have them.
 
 Run `python setup.py develop` to build the project in-place.
 
