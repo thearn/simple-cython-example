@@ -15,7 +15,7 @@ First, install numpy and cython (using pip or from a package manager) if you don
 
 Then just run `python setup.py develop` to build the project in-place.
 
-The module (with its wrapped C functions) will then be importable in python:
+The module (with its wrapped C functions `c_hello`, `factorial`, `array_sum`, and `tessellation`) will then be importable in python:
 ```bash
 >>> from cython_example_proj import *
 ```
