@@ -1,1 +1,1 @@
-from wrapped import c_hello, factorial, array_sum, tessellate
+from .wrapped import c_hello, factorial, array_sum, tessellate

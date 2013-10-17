@@ -17,7 +17,6 @@ def f():
     """
     import numpy as np
     from example_proj import array_sum
-    import time
 
     def array_sum2(A):
         m, n = A.shape
@@ -59,8 +58,8 @@ def profile(f, ignore=["f", "<module>"], verbose=True):
 
     if verbose:
         for v in vals:
-            print
-            print v
+            print()
+            print(v)
     return v
 
 if __name__ == "__main__":

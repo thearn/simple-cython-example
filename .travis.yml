@@ -7,10 +7,12 @@ notifications:
 language: c
 env:
     - PYTHON=python PYSUF='' PYVER=2.7
+    - PYTHON=python3 PYSUF='3' PYVER=3.2
 install:
+    - sudo apt-get update
     - sudo apt-get install $PYTHON-dev
     - sudo apt-get install $PYTHON-numpy
-    - sudo pip install cython
+    - sudo pip-$PYVER install cython
     - sudo apt-get install $PYTHON-setuptools
     - sudo $PYTHON setup.py develop
 script:

@@ -1,11 +1,7 @@
 import logging
-import os
 import unittest
-import os
 import numpy as np
-from cython_example_proj import array_sum, tessellate, factorial, c_hello
-import sys
-from StringIO import StringIO
+from cython_example_proj import array_sum, tessellate, factorial
 
 """
 Some basic tests for stl_tools
@@ -32,17 +28,6 @@ class TestSTL(unittest.TestCase):
 
     def test_factorial(self):
         assert factorial(10) == 3628800
-
-    def test_c_hello(self):
-        saved_stdout = sys.stdout
-        try:
-            out = StringIO()
-            sys.stdout = out
-            c_hello()
-            output = out.getvalue().strip()
-            assert output in "hello world!"
-        finally:
-            sys.stdout = saved_stdout
 
 if __name__ == '__main__':
     unittest.main()
