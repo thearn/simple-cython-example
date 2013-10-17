@@ -8,7 +8,7 @@ A `.pyx` file is included that implements a few C functions which can accept and
 python data types and numpy ndarrays. These are compiled, wrapped, and integrated into the module using a standard `setup.py` script.
 
 In addition to concrete examples of cython syntax, this repo also illustrates a working project structure with a working setup.py configuration (using setuptools)
-for Python projects with C extension modules, and unit test (with a working Travis-CI config).
+for Python projects with C extension modules, along with basic unit tests (together with a working Travis-CI config).
 
 # Building
 First, install numpy and cython.
