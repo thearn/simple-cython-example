@@ -2,6 +2,11 @@ import numpy as np
 from cython_example_proj import array_sum, tessellate
 import time
 
+try:  # python2 & python3 compatibility
+    xrange
+except NameError:
+    xrange = range
+
 
 def array_sum_python(A):
     """
