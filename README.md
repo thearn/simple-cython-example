@@ -13,9 +13,9 @@ for Python projects with C extension modules, along with basic unit tests (toget
 # Building
 First, install numpy and cython (using pip or from a package manager) if you don't already have them.
 
-Run `python setup.py develop` to build the project in-place.
+Then just run `python setup.py develop` to build the project in-place.
 
-Several wrapped C functions will then be importable under the package
+The module (with its wrapped C functions) will then be importable under the package
 `cython_example_proj`.
 
 # Testing
