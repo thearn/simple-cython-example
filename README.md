@@ -2,20 +2,28 @@ simple-cython-example
 =======================
 [![Build Status](https://travis-ci.org/thearn/simple-cython-example.png?branch=master)](https://travis-ci.org/thearn/simple-cython-example)
 
-A small template project that shows how to wrap C/C++ code into python using [cython](http://cython.org/), and build the extensions into an installable module.
+A small template project that acts as a working tutorial on how to wrap C/C++
+code into python using [cython](http://cython.org/), and integrate the
+extensions into an installable module.
 
-A `.pyx` file is included that implements a few C functions which can accept and return standard
-python data types and numpy ndarrays. These are compiled, wrapped, and integrated into the module using a standard `setup.py` script.
+A `.pyx` file is included that implements a few C functions which can accept
+and return standard
+python data types and numpy ndarrays. These are compiled, wrapped, and
+integrated into the module using a standard `setup.py` script.
 
-In addition to concrete examples of cython syntax, this repo also illustrates a working project structure with a working setup.py configuration (using setuptools)
-for Python projects with C extension modules, along with basic unit tests (together with a working Travis-CI config).
+In addition to concrete examples of cython syntax, this repo also illustrates
+a working project structure with a working setup.py configuration (using setuptools)
+for Python projects with C extension modules, along with basic unit tests
+(together with a working Travis-CI config).
 
 # Building
-First, install numpy and cython (using pip or from a package manager) if you don't already have them.
+First, install numpy and cython (using pip or from a package manager) if you
+don't already have them.
 
 Then just run `python setup.py develop` to build the project in-place.
 
-The module (with its wrapped C functions `c_hello`, `factorial`, `array_sum`, and `tessellation`) will then be importable in python:
+The module (with its wrapped C functions `c_hello`, `factorial`, `array_sum`,
+and `tessellation`) will then be importable in python:
 ```bash
 >>> from cython_example_proj import c_hello, factorial, array_sum, tessellation
 ```
@@ -26,11 +34,19 @@ The [unit test](http://docs.python.org/2/library/unittest.html) file
 can be run directly, or (if you have nose installed),
 can be run automatically by running `nosetests` in the top level directory.
 
-Automated testing is peformed with [Travis CI](https://travis-ci.org/), a free service that integrates with github.
-All that is required is to commit a [.travis.yml](.travis.yml) configuration file and mark the repository on your Travis CI account.
-Then, each time you push a branch to github, tests will be executed automatically. The results of the tests can be e-mailed
-to you. The results of the latest test will be shown at the bottom of every pull request forked from your repository,
-and will be reflected in any build status images you embed (like the one at the top of this repo).
+Automated testing is peformed with [Travis CI](https://travis-ci.org/), a free
+service that integrates with github and tests this library on python versions
+2.7 and 3.2.
+All that is required for this is to commit a [.travis.yml](.travis.yml) configuration
+file and mark the repository for testing in
+[your Travis CI account](http://about.travis-ci.org/docs/user/getting-started/).
+
+Then, each time you push a branch to github, tests will be executed
+automatically. The results of the tests can be e-mailed
+to you. The results of the latest test will be shown at the bottom of every
+pull request forked from your repository,
+and will be reflected in any build status images you embed (like the one at
+the top of this repo).
 
 # Wrapped example functions
 
@@ -66,7 +82,7 @@ python+numpy finished : 48.1245310307 s
 
 ```
 
-So the cython-generated C implementation of `array_sum` is on parity with `numpy.sum`, and are 
+So the cython-generated C implementation of `array_sum` is on parity with `numpy.sum`, and are
 are each much faster than the pure python implementation.
 
 The C implementation of `tessellate` blew the python+numpy implementation out of the water. Looks like I've got some

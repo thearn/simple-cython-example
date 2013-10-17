@@ -4,7 +4,7 @@ import numpy as np
 from cython_example_proj import array_sum, tessellate, factorial
 
 """
-Some basic tests for stl_tools
+Some basic tests
 """
 
 logging.basicConfig(level=logging.DEBUG)

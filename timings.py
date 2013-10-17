@@ -42,33 +42,33 @@ def tessellate_python(A):
 if __name__ == "__main__":
 
     A = np.random.randn(5000, 5000)
-    print 59 * "-"
-    print "Initialized array for sum; starting comparison:"
-    print 59 * "-"
+    print(59 * "-")
+    print("Initialized array for sum; starting comparison:")
+    print(59 * "-")
 
     t = time.time()
     array_sum(A)
-    print "cython finished :", time.time() - t, "s"
+    print("cython finished :", time.time() - t, "s")
 
     t = time.time()
     A.sum()
-    print "numpy finished :", time.time() - t, "s"
+    print("numpy finished :", time.time() - t, "s")
 
     t = time.time()
     array_sum_python(A)
-    print "python finished :", time.time() - t, "s"
+    print("python finished :", time.time() - t, "s")
 
-    print
+    print()
 
     A = np.random.randn(1024, 1024)
-    print 59 * "-"
-    print "Initialized array for tesselate; starting comparison:"
-    print 59 * "-"
+    print(59 * "-")
+    print("Initialized array for tesselate; starting comparison:")
+    print(59 * "-")
     t = time.time()
     tessellate(A)
-    print "cython finished :", time.time() - t, "s"
+    print("cython finished :", time.time() - t, "s")
 
     t = time.time()
     tessellate_python(A)
-    print "python+numpy finished :", time.time() - t, "s"
-    print
+    print("python+numpy finished :", time.time() - t, "s")
+    print()
