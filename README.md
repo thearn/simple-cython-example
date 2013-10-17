@@ -18,7 +18,7 @@ Run `python setup.py develop` to build the project in-place.
 Several wrapped C functions will then be importable under the package
 `cython_example_proj`.
 
-## Testing
+# Testing
 
 The unit test file
 [test_cython_examples.pyx](cython_example_proj/test/test_cython_example.py)
@@ -27,7 +27,9 @@ can be run automatically by running `nosetests` in the top level directory.
 
 Automated testing is peformed with [Travis CI](https://travis-ci.org/), a free service that integrates with github.
 All that is required is to commit a [.travis.yml](.travis.yml) configuration file and mark the repository on your Travis CI account.
-Then, each time you push a branch to github, tests will be executed automatically.
+Then, each time you push a branch to github, tests will be executed automatically. The results of the tests can be e-mailed
+to you. The results of the latest test will be shown at the bottom of every pull request forked from your repository,
+and will be reflected in any build status images you embed (like the one at the top of this repo).
 
 # Wrapped example functions
 
