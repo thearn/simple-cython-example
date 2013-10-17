@@ -18,11 +18,12 @@ Run `python setup.py develop` to build the project in-place.
 Several wrapped C functions will then be importable under the package
 `cython_example_proj`.
 
+## Testing
+
 The unit test file
 [test_cython_examples.pyx](cython_example_proj/test/test_cython_example.py)
-can be run directly, or (if you have nose installed).
+can be run directly, or (if you have nose installed),
 can be run automatically by running `nosetests` in the top level directory.
-`nosetests` is a command that will run any unit tests that it can find in the current directory/subdirectories.
 
 # Wrapped example functions
 
@@ -58,10 +59,10 @@ python+numpy finished : 48.1245310307 s
 
 ```
 
-So the cython-generated C implementation of `array_sum` is interestingly on parity with `numpy.sum`, which
-are together much faster than the pure python implementation.
+So the cython-generated C implementation of `array_sum` is on parity with `numpy.sum`, and are 
+are each much faster than the pure python implementation.
 
-The C implementation of `tessellatee` blew a python+numpy implementation out of the water. Looks like I've got some
+The C implementation of `tessellate` blew the python+numpy implementation out of the water. Looks like I've got some
 rewriting to do on [STL Tools](https://github.com/thearn/stl_tools)!
 
 # Profiling function
