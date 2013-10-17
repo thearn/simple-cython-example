@@ -43,7 +43,7 @@ For a quick benchmark of the two ndarray functions listed, run
 `python timings.py`. This will show timings of the wrapped C functions
 vs. numpy+python and/or pure python implementations of the same functions.
 
-```bash
+```
 -----------------------------------------------------------
 Initialized array for sum; starting comparison:
 -----------------------------------------------------------
