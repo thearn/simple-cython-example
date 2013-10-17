@@ -1,10 +1,9 @@
-
 simple-cython-example
 =======================
 A small template project that shows how to wrap C/C++ code into python using Cython, and build the extensions into an installable module.
 
 A `.pyx` file is included that implements a few wrapped C functions which can accept and return standard
-python data types and numpy ndarrays.
+python data types and numpy ndarrays. These are compiled, wrapped, and integrated into the module using a standard `setup.py` script.
 
 In addition to concrete examples of cython syntax, this repo also illustrates a working project structure with a working setup.py configuration (using setuptools)
 for Python projects with C extension modules, and unit test (with a working Travis-CI config).
