@@ -17,17 +17,23 @@ Run `python setup.py develop` to build the project in-place.
 Several wrapped C functions will then be importable under the package
 `cython_example_proj`.
 
+The unit test file
+[test_cython_examples.pyx](cython_example_proj/test/test_cython_example.py)
+can be run directly, or (if you have nose installed).
+can be run automatically by running `nosetests` in the top level directory.
+`nosetests` is a command that will run any unit tests that it can find in the current directory/subdirectories.
+
 # Wrapped example functions
 
 4 examples functions are defined in
 [wrapped.pyx](cython_example_proj/wrapped.pyx):
 
-    - A direct wrapping of a simple C "hello world" function, implemented in [cfunc.c](cython_example_proj/lib/cfunc.c)
-    - A C function to compute the factorial of a python integer, built using
+- A direct wrapping of a simple C "hello world" function, implemented in [cfunc.c](cython_example_proj/lib/cfunc.c)
+- A C function to compute the factorial of a python integer, built using
     Cython syntax
-    - A C function to compute the sum of a numpy ndarray
-    - A C function to compute and return the tessellation structure (ndarray)
-      of the pixels of an inputted digital image (ndarray). This is a re-implementation of the main method used in the [STL Tools](https://github.com/thearn/stl_tools) library.
+- A C function to compute the sum of a numpy ndarray
+- A C function to compute and return the tessellation structure (ndarray)
+  of the pixels of an inputted digital image (ndarray). This is a re-implementation of the main method used in the [STL Tools](https://github.com/thearn/stl_tools) library.
 
 # Benchmarks
 
