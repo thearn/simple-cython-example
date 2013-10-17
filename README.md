@@ -25,6 +25,10 @@ The unit test file
 can be run directly, or (if you have nose installed),
 can be run automatically by running `nosetests` in the top level directory.
 
+Automated testing is peformed with [Travis CI](https://travis-ci.org/), a free service that integrates with github.
+All that is required is to commit a [.travis.yml](.travis.yml) configuration file and mark the repository on your Travis CI account.
+Then, each time you push a branch to github, tests will be executed automatically.
+
 # Wrapped example functions
 
 4 examples functions are defined in
