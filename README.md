@@ -1,5 +1,7 @@
 simple-cython-example
 =======================
+[![Build Status](https://travis-ci.org/thearn/simple-cython-example.png?branch=master)](https://travis-ci.org/thearn/simple-cython-example)
+
 A small template project that shows how to wrap C/C++ code into python using Cython, and build the extensions into an installable module.
 
 A `.pyx` file is included that implements a few wrapped C functions which can accept and return standard
