@@ -41,7 +41,7 @@ def factorial(int x):
 
 # decorator turns off bounds-checking for speed
 @cython.boundscheck(False)
-def array_sum(np.ndarray[DTYPE_t, ndim=2] A):
+def array_sum(double[:, ::1] A):
     # example of an ndarray function that returns a scalar
     cdef int m = A.shape[0]
     cdef int n = A.shape[1]
@@ -56,7 +56,7 @@ def array_sum(np.ndarray[DTYPE_t, ndim=2] A):
 
 
 @cython.boundscheck(False)
-def tessellate(np.ndarray[DTYPE_t, ndim=2] A):
+def tessellate(double[:, ::1] A):
     # example of array function that returns a new ndarray
     # turns indices of an m by n array into an 2mn by 12 array of triangle
     # faces, as per the STL file format.
@@ -67,7 +67,7 @@ def tessellate(np.ndarray[DTYPE_t, ndim=2] A):
     cdef double i_ = 0
     cdef double k_ = 0
 
-    cdef np.ndarray results = np.zeros([2 * m * n, 12], dtype=DTYPE)
+    cdef double[:, ::1] results = np.zeros([2 * m * n, 12])
 
     for i in range(m - 1):
         for k in range(n - 1):
