@@ -4,7 +4,7 @@ simple-cython-example
 
 A small template project that acts as a working tutorial on how to wrap C
 code into python using [cython](http://cython.org/), and integrate the
-extensions into an installable module.
+extensions into an installable module. Developed around python 2.7, but written for compatibility with python 3.x.
 
 [A cython pyx file](cython_example_proj/wrapped.pyx) is included that implements a few C functions which can accept
 and return standard
