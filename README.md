@@ -84,8 +84,8 @@ python+numpy finished : 48.1245310307 s
 So the cython-generated C implementation of `array_sum` is on parity with `numpy.sum`, and are
 are each much faster than the pure python implementation.
 
-The C implementation of `tessellate` is much faster than the python+numpy implementation. Looks like I've got some
-rewriting to do in [STL Tools](https://github.com/thearn/stl_tools)...
+The C implementation of `tessellate` is much faster than the python+numpy implementation. Using this information, 
+I've written a complete c-extension for [STL Tools](https://github.com/thearn/stl_tools).
 
 # Profiling function
 If you're interested in possibily rewriting some or part of a module as a
