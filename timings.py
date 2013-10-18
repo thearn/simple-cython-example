@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
     A = np.random.randn(1024, 1024)
     print(59 * "-")
-    print("Initialized array for tesselate; starting comparison:")
+    print("Initialized array for tessellate; starting comparison:")
     print(59 * "-")
     t = time.time()
     tessellate(A)

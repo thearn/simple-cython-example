@@ -74,9 +74,9 @@ numpy finished : 0.024649143219 s
 python finished : 14.2366518974 s
 
 -----------------------------------------------------------
-Initialized array for tesselate; starting comparison:
+Initialized array for tessellate; starting comparison:
 -----------------------------------------------------------
-cython finished : 2.98883199692 s
+cython finished : 0.3423628807067871 s
 python+numpy finished : 48.1245310307 s
 
 ```
