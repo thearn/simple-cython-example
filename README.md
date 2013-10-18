@@ -9,7 +9,7 @@ extensions into an installable module.
 [A cython pyx file](cython_example_proj/wrapped.pyx) is included that implements a few C functions which can accept
 and return standard
 python data types and numpy ndarrays. These are compiled, wrapped, and
-integrated into the module using a standard `setup.py` script.
+integrated into the module using a standard [setup.py](setup.py) script.
 
 In addition to concrete examples of cython syntax, this repo also illustrates
 a working project structure with a working setup.py configuration (using setuptools)
