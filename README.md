@@ -57,7 +57,7 @@ and will be reflected in any build status images you embed (like this one: [![Bu
     Cython syntax
 - A C function to compute the sum of a numpy ndarray
 - A C function to compute and return the tessellation structure (ndarray)
-  of the pixels of an inputted digital image (ndarray). This is a re-implementation of the main method used in the [STL Tools](https://github.com/thearn/stl_tools) library.
+  of the pixels of an inputted digital image (ndarray). This is a re-implementation of first half of the main method used in the [STL Tools](https://github.com/thearn/stl_tools) library.
 
 # Benchmarks
 
