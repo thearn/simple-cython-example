@@ -6,7 +6,7 @@ A small template project that acts as a working tutorial on how to wrap C
 code into python using [cython](http://cython.org/), and integrate the
 extensions into an installable module.
 
-A `.pyx` file is included that implements a few C functions which can accept
+[A cython pyx file](cython_example_proj/wrapped.pyx) is included that implements a few C functions which can accept
 and return standard
 python data types and numpy ndarrays. These are compiled, wrapped, and
 integrated into the module using a standard `setup.py` script.
