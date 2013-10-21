@@ -30,7 +30,7 @@ and `tessellation`) will then be importable in python:
 # Testing
 
 The [unit test](http://docs.python.org/2/library/unittest.html) file
-[test_cython_examples.py](cython_example_proj/test/test_cython_example.py)
+[test_cython_examples.py](cython_example_proj/test/test_cython_examples.py)
 can be run directly, or (if you have nose installed),
 can be run automatically by running `nosetests` in the top level directory.
 
