@@ -27,25 +27,6 @@ and `tessellation`) will then be importable in python:
 ```bash
 >>> from cython_example_proj import c_hello, factorial, array_sum, tessellation
 ```
-# Testing
-
-The [unit test](http://docs.python.org/2/library/unittest.html) file
-[test_cython_examples.py](cython_example_proj/test/test_cython_examples.py)
-can be run directly, or (if you have nose installed),
-can be run automatically by running `nosetests` in the top level directory.
-
-Automated testing is peformed with [Travis CI](https://travis-ci.org/), a free
-service that integrates with github and tests this library on python versions
-2.7 and 3.2.
-All that is required for this is to commit a [.travis.yml](.travis.yml) configuration
-file and mark the repository for testing in
-[your Travis CI account](http://about.travis-ci.org/docs/user/getting-started/).
-
-Then, each time you push a branch to github, tests will be executed
-automatically. The results of the tests can be e-mailed
-to you. The results of the latest test will be shown at the bottom of every
-pull request forked from your repository,
-and will be reflected in any build status images you embed (like this one: [![Build Status](https://travis-ci.org/thearn/simple-cython-example.png?branch=master)](https://travis-ci.org/thearn/simple-cython-example)).
 
 # Wrapped example functions
 
@@ -84,7 +65,7 @@ python+numpy finished : 48.1245310307 s
 So the cython-generated C implementation of `array_sum` is on parity with `numpy.sum`, and are
 are each much faster than the pure python implementation.
 
-The C implementation of `tessellate` is much faster than the python+numpy implementation. Using this information, 
+The C implementation of `tessellate` is much faster than the python+numpy implementation. Using this information,
 I've written a complete c-extension for [STL Tools](https://github.com/thearn/stl_tools).
 
 # Profiling function
