@@ -51,3 +51,9 @@ dist/
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Poetry #
+##########
+poetry.lock
+.venv/
+venv/

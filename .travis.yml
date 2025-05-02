@@ -1,14 +1,15 @@
 language: python
 python:
-  - "2.7"
-  - "3.6"
+  - "3.12"  # Updated to match pyproject.toml
 
 notifications:
   email: false
 
+before_install:
+  - pip install poetry  # Install Poetry
+
 install:
-    - pip install -q numpy cython
-    - python setup.py develop
+  - poetry install  # Install dependencies and build extension
 
 script:
-  - pytest cython_example_proj
+  - poetry run pytest cython_example_proj  # Run tests within Poetry environment

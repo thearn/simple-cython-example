@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "simple-cython-example"
+version = "0.1.0"
+description = "A small project template that shows how to wrap C code into python using cython, along with other packaging concepts"
+authors = ["Tristan Hearn <tristanhearn@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [
+    { include = "cython_example_proj" },
+]
+
+# Define dependencies in a sub-table
+[tool.poetry.dependencies]
+python = ">=3.12"
+numpy = ">=2.2.5,<3.0.0"
+cython = ">=3.0.12,<4.0.0"
+pytest = "^8.3.5"
+setuptools = ">=42" # Add setuptools as a runtime dependency
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "cython", "numpy"]
+build-backend = "setuptools.build_meta"
