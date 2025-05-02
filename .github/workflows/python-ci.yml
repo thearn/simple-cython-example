@@ -1,0 +1,36 @@
+# .github/workflows/python-ci.yml
+name: Python CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Install Poetry
+      run: |
+        pipx install poetry
+
+    - name: Install dependencies
+      run: |
+        poetry install
+
+    - name: Build Cython extension in place
+      run: |
+        poetry run python setup.py build_ext --inplace
+
+    - name: Run tests
+      run: |
+        poetry run pytest cython_example_proj
