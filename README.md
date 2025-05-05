@@ -13,7 +13,7 @@ integrated into the module using [Cython](http://cython.org/) and `setuptools`, 
 In addition to concrete examples of cython syntax, this repo also illustrates
 a working project structure for Python projects with C extension modules using Poetry, along with basic unit tests.
 
-## Setup, Building, and Testing with Poetry
+## Setup, Building, and Testing with Poetry 
 
 ### Installation & Initial Build
 First, ensure you have [Poetry](https://python-poetry.org/docs/#installation) installed.
